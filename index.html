@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<title> Meu Projeto Web I </title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/box.css">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+</head>
+<body>
+	<header  class = "Cabecalho Sublinha" >
+		<img alt = "01" src = "img/logo2.png">
+	</header>
+	<nav class = "Menu_main">
+		<ul>
+			<li class="Sublinha"><a class="visita" href="#">Início</a></li>
+			<li class="Sublinha"><a class="visita" href="#">Sobre</a></li>
+			<li class="Sublinha"><a class="visita" href="#">Galeria</a></li>
+			<li class="Sublinha"><a class="visita" href="#">Contato</a></li>
+			<li class="Sublinha"><a class="visita" href="#">Desafios</a></li>
+			<li class="Sublinha"><a class="visita" href="#">Sugestões</a></li>
+		</ul>
+	</nav>
+	<!--<div  class="Navegacao">
+	  <p>
+	    <a>codeNerd@root:~$ cd /home/Inicio </a>
+	  </p>
+	</div>
+	-->
+	<div class = "Pagina">
+		<div class="direita">
+			<div class = "Conteudo_Lateral Titulo"> Conteúdo </div>
+			<div class = "Barra_Lateral2">
+				<nav>
+					<ul>
+						<li class="Sublinha"><a href="#">Lógica de Programação...</a></li>
+						<li class="Sublinha"><a href="#">Linguagem C...</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class = "Conteudo_Lateral Titulo"> Linguagem 'C' </div>
+			<div class = "Barra_Lateral2">
+				<nav>
+					<ul>
+						<li class="Sublinha"><a href="#">Introdução a Linguagem C ...</a></li>
+						<li class="Sublinha"><a href="#">Hello, World!...</a></li>
+						<li class="Sublinha"><a href="#">Tipos Básicos...</a></li>
+						<li class="Sublinha"><a href="#">Laços de Repetição...</a></li>
+						<li class="Sublinha"><a href="#">Vetores...</a></li>
+						<li class="Sublinha"><a href="#">Matrizes...</a></li>
+						<li class="Sublinha"><a href="#">Endereços e Ponteiros...</a></li>
+						<li class="Sublinha"><a href="#">Arquivos...</a></li>
+						<li class="Sublinha"><a href="#">Funções...</a></li>
+						<li class="Sublinha"><a href="#">Passagem por Valor...</a></li>
+						<li class="Sublinha"><a href="#">Passagem por Referência...</a></li>
+						<li class="Sublinha"><a href="#">Struct...</a></li>
+						<li class="Sublinha"><a href="#">Arquivos Binarios...</a></li>
+						<li class="Sublinha"><a href="#">TAD vs TED...</a></li>
+
+					</ul>
+				</nav>
+			</div>
+		</div>
+		<div  class="post" id="log">
+		  <p>
+		    <a class="esquerda" href = "index.html"> <span class="esquerda Titulo">codeNerd@root:~$/home </span></a>
+		  </p>
+		</div>
+		<article>
+			<div class = "Corpo_Central">
+				<h2>O que é a linguagem C ?</h2>
+				<br>
+				<p>
+					<img  alt="0" class="esquerda" width="120"  height="120" src="img/c.png">
+					Em uma era onde o software está cada vez mais presente no nosso dia a dia é importante ter algumas bases de programação, e para tanto é importante ter um bom material com explicações claras e exemplos; e o livro Programar em C se presta bem ao exercício.
+				</p>
+					<br>
+				<p>
+					Mas por que C e não Java ou Basic, ou ainda Perl? Linguagens como o Java ou Perl são linguagens a base de bytecode interpretado por uma máquina virtual, sendo assim, não é um código interpretado diretamente pelo processador. Ao contrário de muitas linguagens de programação, o C permite ao programador endereçar a memória de maneira muito parecida como seria feito em Assembly. Linguagens como o Java ou o Perl fornecem mecanismos que permitem que o programador faça o seu trabalho sem ter que se preocupar com a atribuição de memória ou com apontadores. Geralmente isso é bom, uma vez que é bastante trabalhoso lidar com a alocação de memória quando escrevemos aplicações com algoritmos de alto nível. No entanto, quando lidamos com tarefas de baixo-nível como aquelas que um núcleo (kernel) tem obrigação de desempenhar, como a de copiar um conjunto de bytes para uma placa de rede, torna-se altamente necessário um acesso direto à memória ― algo que não é possível fazer com Java. C pode ser diretamente compilado em código de máquina, e por isso é rápido e eficiente. Além disso, C permite personalizar como implementar cada coisa ao básico, como alocação de memória, permitindo adaptações para melhorar desempenho.
+				</p>
+					<br>
+				<p>
+					Vale lembrar que os softwares interpretadores de script ou bytecode, como Java e Python, são escritos em linguagens como C e C++.
+					<br>
+					<br>
+					<h3>Será uma surpresa que C seja uma linguagem tão popular?</h3>
+					<img  alt = "1" class="direita"  src="img/gordo.png">
+					<br>
+					Como num efeito dominó, a próxima geração de programas segue a tendência dos seus ancestrais. Sistemas operacionais desenvolvidos em C sempre têm bibliotecas de sistema desenvolvidas em C. Essas bibliotecas são usadas para criar bibliotecas de programa (como Xlib, OpenGL ou GTK), e seus desenvolvedores geralmente decidem usar a mesma linguagem das bibliotecas de sistema. Desenvolvedores de aplicação usam bibliotecas de programa para desenvolver processadores de texto, jogos, tocadores de mídia, etc. Muitos vão decidir trabalhar com a mesma linguagem que a biblioteca foi escrita, e assim o processo continua...
+					<br>
+				<p>
+					<img alt = "2" class="esquerda" width="250"  height="200" src="img/face.png">
+					C é uma das linguagens de programação mais populares para se escrever sistemas operacionais, como o Microsoft Windows, o Mac OS X e o GNU/Linux. Sistemas operacionais comunicam-se diretamente com o hardware; não há nenhuma camada mais baixa para mediar seus pedidos. Originalmente, os sistemas operacionais eram escritos na linguagem Assembly, o que resultava em um código muito rápido e eficiente. Entretanto, escrever um sistema operacional em Assembly é um processo tedioso (lento), e produz um código que funcionará somente em uma arquitetura de CPU, tal como o x86 ou ARM. Escrever um sistema operacional em uma linguagem de alto nível, tal como C, possibilita que os programadores readaptem o sistema operacional a várias arquiteturas sem precisar reescrever todo o código. O núcleo (kernel) Linux é um exemplo de sistema operacional escrito em C, com apenas algumas seções do código escritas em Assembly, para poder executar instruções que só existem em uma ou outra arquitetura e para algumas otimizações.
+				</p>
+					<br>
+				<a class="fonte" href="https://pt.wikibooks.org/wiki/Programar_em_C/Por_que_aprender_a_linguagem_C"> > Fonte</a>
+			</div>
+			<footer class="Corpo_Central">
+				<span class="esquerda Titulo">Conteúdo: </span>
+				<p> O que é a linguagem C ?</p>
+				<p>Postado por: <a class="Link" href="https://www.facebook.com/XWalkerTWR"> Mateus Garcia </a></p>
+			</footer>
+		</article>
+	</div>
+	<br><br>
+	<footer class="Rodape">
+		<h1> #codeNerd</h1>
+		<br>
+		<div class = "circle">
+			<img src="img/perfil.png" alt="perfil" height="60" width="60">
+			<p> Mateus Pinto Garcia</p>
+		</div>
+		<nav>
+			<ul>
+				<li class="Sublinha"><a href="#">Sobre o autor</a></li>
+				<li class="Sublinha"><a href="#">Mapa do site</a></li>
+				<li class="Sublinha"><a href="#">Entre em contato</a></li>
+			</ul>
+		</nav>
+		<br>
+	  	<p> Email contato: <a class="Link" href="#"> mateuspgx5@live.com</a>
+			<br>
+			<br>
+			<div class="by">
+					<br>
+				<p>Desenvolvido por: <a class="Link" href="https://www.facebook.com/XWalkerTWR"> Mateus Pinto Garcia. </a></p>
+			</div>
+	</footer>
+
+	<a href="#top"  class="glyphicon glyphicon-chevron-up"><img alt = "3" src="img/topo.png" height="50" width="50" /></a>
+
+	<script type="text/javascript" src = "js/plugins.js"></script>
+	<script type="text/javascript" src = "js/script.js"></script>
+</body>
+</html>

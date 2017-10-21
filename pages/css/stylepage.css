@@ -4,11 +4,8 @@
 	padding: 0;
 }
 body {
-  font-family: Monaco, Consolas, "Lucida Console", monospace;
+    font-family: Monaco, Consolas, "Lucida Console", monospace;
 	background: #F4F4F4;
-	background-image: url('img/c.png');
-	background-repeat: repeat;
-
 }
 a{
 
@@ -160,11 +157,11 @@ nav ul li a:hover{
 .Corpo_Central{
 
 	border-width: 2px;
-  border-style: dashed;
-  border-color: #C0C0C0;
+	border-style: dashed;
+	border-color: #C0C0C0;
 	color: black;
 	background-color: #fff;
-	width: 650px;
+	width: auto;
 	padding: 5px;
 	margin: 5px;
 }
@@ -182,20 +179,20 @@ nav ul li a:hover{
 .post{
 
 	border-width: medium;
-  border-style: solid;
-  border-color: #E5E5E5;
+    border-style: solid;
+    border-color: #E5E5E5;
 	margin:  5px;
 	color: #9FE12D;
 	background: #1C1917;
-	width: 650px;
+	width: auto;
 	height: 30px;
 	padding: 5px;
 }
 .Conteudo_Lateral{
 
 	border-width: medium;
-  border-style: solid;
-  border-color: #E5E5E5;
+    border-style: solid;
+    border-color: #E5E5E5;
 	margin:  5px;
 	color: #9FE12D;
 	background: #1C1917;
@@ -205,26 +202,6 @@ nav ul li a:hover{
 	height: 30px;
 }
 
-
-.Barra_Lateral2{
-
-	width: 300px;
-	margin: 5px;
-	padding: 5px;
-	color: #1C1917;
-	height: auto;
-}
-
-.Barra_Lateral2 nav ul li{
-	-webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
-	text-align: center;
-	display: block;
-	border-bottom: 1px solid #E6E6E6;
-}
-.Barra_Lateral2 nav ul li a:hover{
-	color: #E52329;
-}
 
 .Rodape{
   width: 100%;

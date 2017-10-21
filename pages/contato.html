@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<title> Meu Projeto Web I </title>
+	<link rel="stylesheet" type="text/css" href="css/stylepage.css">
+
+	<link rel="stylesheet" type="text/css" href="css/styleform.css"> <!--  Esse CSS é do formulário-->
+	
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+<body>
+	<header  class = "Cabecalho" >
+		<img alt = "01" src = "../img/logo2.png">
+	</header>
+	<nav class = "Menu_main">
+		<ul>
+			<li class="Sublinha"><a class="visita" href="#">Início</a></li>
+			<li class="Sublinha"><a class="visita" href="#">Sobre</a></li>
+			<li class="Sublinha"><a class="visita" href="#">Galeria</a></li>
+			<li class="Sublinha"><a class="visita" href="#">Contato</a></li>
+			<li class="Sublinha"><a class="visita" href="#">Desafios</a></li>
+			<li class="Sublinha"><a class="visita" href="#">Sugestões</a></li>
+		</ul>
+	</nav>
+	<!--<div  class="Navegacao">
+	  <p>
+	    <a>codeNerd@root:~$ cd /home/Inicio </a>
+	  </p>
+	</div>
+	-->
+	<div class = "Pagina">
+
+		<div  class="post" id="log">
+		  <p>
+		    <a  class="esquerda" href = ""> <span class="esquerda Titulo">codeNerd@root:~$/home </span></a>
+		  </p>
+		</div>
+		<article>
+			<div class = "Corpo_Central">
+				<!--
+						//Onde começa meu formulário . . .
+						//Apenas teste, depois irei mudar o CSS
+				-->	
+			  	<div class="entercontact">
+			 		<h6>ENTRE EM CONTATO</h6>
+			 		<p>Preencher os campos abaixo.</p>
+			 	</div>
+			    <div  class = "form">
+			        <form name = "formGeral" action="enviando.html" >
+			          <fieldset>
+			            <legend> Entre em Contato </legend><br>
+			            Nome <input type="text" name="nome" value="" placeholder="Digite seu nome...">
+			            <br>
+			            <br>
+			            Email <input placeholder="Digite o email..." type="text" name="email" value="">
+			            <br><br>
+
+			            <fieldset>
+			                <legend>Sexo</legend>
+			                
+			                <div class="Sexo">
+			                  
+			                  <input type="radio" name="sexo" id="Masculino" value="male">
+			                  <label for="male">Masculino</label><br>
+
+			                  <input type="radio" name="sexo" id="Feminino" value="female">
+			                  <label for="female">Feminino</label><br>
+			                
+			                </div>
+			            </fieldset><br>
+			            
+			            <textarea placeholder="Digite uma mensagem..." name="mensagem" rows="10" cols="90"></textarea>
+			          </fieldset>
+			          <br>
+			          <input  class="botao" type="submit" onclick=" return ValidarDados()">
+			        </form>
+			    </div>
+
+			</div>
+	
+		</article>
+	</div>
+	<br><br>
+	<footer class="Rodape">
+		<h1> #codeNerd</h1>
+		<br>
+		<div class = "circle">
+			<img src="../img/perfil.png" alt="perfil" height="60" width="60">
+			<p> Mateus Pinto Garcia</p>
+		</div>
+		<nav>
+			<ul>
+				<li class="Sublinha"><a href="#">Sobre o autor</a></li>
+				<li class="Sublinha"><a href="#">Mapa do site</a></li>
+				<li class="Sublinha"><a href="#">Entre em contato</a></li>
+			</ul>
+		</nav>
+		<br>
+	  	<p> Email contato: <a class="Link" href="#"> mateuspgx5@live.com</a>
+			<br>
+			<br>
+			<div class="by">
+					<br>
+				<p>Desenvolvido por: <a class="Link" href="https://www.facebook.com/XWalkerTWR"> Mateus Pinto Garcia. </a></p>
+			</div>
+	</footer>
+
+	<a href="#top"  class="glyphicon glyphicon-chevron-up"><img alt = "3" src="../img/topo.png" height="50" width="50" /></a>
+
+	<script type="text/javascript" src = "js/scriptform.js"></script>
+	<script type="text/javascript" src = "js/scriptpage.js"></script>
+</body>
+</html>

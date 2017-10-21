@@ -1,7 +1,7 @@
 
 /*efeito escrever*/
 var div = document.getElementById('log');
-var texto = '  ./O_que_e_a_linguagem_C_?.docx';
+var texto = '  ./Formulario_de_contato.html';
 
 function escrever(str, el) {
     var char = str.split('').reverse();

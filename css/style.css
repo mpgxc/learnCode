@@ -60,6 +60,7 @@ nav ul li a{
 }
 nav ul li a:hover{
 	color: #E52329;
+	background-color: #111;
 }
 .esquerda {float: left;}
 .direita {float: right;}

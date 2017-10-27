@@ -5,13 +5,9 @@
 }
 body {
   font-family: Monaco, Consolas, "Lucida Console", monospace;
-	background: #F4F4F4;
-	background-image: url('img/c.png');
-	background-repeat: repeat;
-
+	background:#e6e6fa;
 }
 a{
-
 	text-decoration: none;
 	color: #fff;
 }
@@ -20,23 +16,36 @@ ul li {
   font-family: sans-serif;
   font-size: 18px;
 }
+.menu-fixo  {
+    position:fixed !important;
+    top: 0;
+    z-index: 99;
+}
 
 .Cabecalho{
 
 	background: #24252A;
 	width: 100%;
-	height:  150px;
+	height:  170px;
 	padding: 15px 0;
 	color: #fff;
 	text-align: center;
 }
-.Cabecalho img{
+#Logo{
 	margin-top: 50px;
+	width: auto;
+	height: 100px;
+}
+.Video{
+
+	width: 80%;
 }
 .Menu_main{
 
+	
 	width:100%;
 	background-color: #1C1917;
+	height: 60px;
 	color: #fff;
 	padding: 0px;
 	text-align: center;
@@ -54,7 +63,7 @@ nav ul li{
 nav ul li a{
 
 	-webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+    transition: all 300ms ease;
 	text-decoration: none;
 	color: inherit;
 }
@@ -65,36 +74,6 @@ nav ul li a:hover{
 .direita {float: right;}
 .fonte{
 	color: black;
-}
-.menu-icon{
-
-	width: 100%;
-	background: #005c48;
-	text-align: left;
-	box-sizing: border-box;
-	padding: 15px 10px;
-	cursor: pointer;
-	color: #fff;
-	display: none;
-	text-align: right;
-}
-
-@media (max-width: 580px){
-	nav ul{
-		max-height: 0px;
-	}
-	.showing{
-		max-height: 20em;
-	}
-	nav ul li{
-		box-sizing: border-box;
-		width: 100%;
-		padding: 15px;
-		text-align: left;
-	}
-	.menu-icon{
-		display: block;
-	}
 }
 
 /* Underline From Left */
@@ -131,10 +110,10 @@ nav ul li a:hover{
 .circle img{
 
 	border-radius:100%;
-  border:10px solid #E52329;
-  width:100px;
-  height:100px;
-  background-color:purple;
+  	border:10px solid #E52329;
+  	width:100px;
+  	height:100px;
+  	background-color:purple;
 }
 /*Divs*/
 
@@ -145,16 +124,9 @@ nav ul li a:hover{
 	box-shadow: 0px 5px 5px rgba(1,0,0,0.1);
 	margin:  30px auto 0px auto;
 	padding: 10px;
+	margin-top: 80px;
 	border-radius: 9px;
 	width: 1000px;
-}
-.fb-comments{
-
-	background:  red;
-	height:  100px;
-	width: 650px;
-	padding: 5px;
-	margin: 30px auto 0px auto;
 }
 
 .Corpo_Central{
@@ -168,17 +140,7 @@ nav ul li a:hover{
 	padding: 5px;
 	margin: 5px;
 }
-.Navegacao{
 
-	box-shadow: 0px 5px 5px rgba(1,0,0,0.3);
-	margin:  30px auto 0px auto;
-	color: #9FE12D;
-	background: black;
-	border-radius: 12px;
-	width: 660px;
-	height: 25px;
-	padding: 5px;
-}
 .post{
 
 	border-width: medium;
@@ -194,8 +156,8 @@ nav ul li a:hover{
 .Conteudo_Lateral{
 
 	border-width: medium;
-  border-style: solid;
-  border-color: #E5E5E5;
+    border-style: solid;
+    border-color: #E5E5E5;
 	margin:  5px;
 	color: #9FE12D;
 	background: #1C1917;
@@ -252,20 +214,6 @@ nav ul li a:hover{
  	color: #E52329;
 }
 
-/*Voltar ao topo*/
-a[href="#top"]{
-    padding:10px;
-    position:fixed;
-    top: 90%;
-    right:40px;
-    display:none;
-    font-size: 30px;
-}
-a[href="#top"]:hover{
-    text-decoration:none;
-}
-
-
 /*Hover dos tituloss, sem links*/
 
 .Titulo{
@@ -276,3 +224,8 @@ a[href="#top"]:hover{
 .Titulo:hover{
 	color: white;
 }
+
+
+
+
+

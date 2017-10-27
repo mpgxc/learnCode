@@ -2,28 +2,38 @@
 <html lang="pt">
 <head>
 	<title> Meu Projeto Web I </title>
-	
 	<link rel="stylesheet" type="text/css" href="css/style.css">
-	
-	<link rel="stylesheet" type="text/css" href="css/box.css">
-
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script >
+		$(function(){   
+			var nav = $('#menuHeader');   
+			$(window).scroll(function () { 
+				if ($(this).scrollTop() > 150) { 
+				nav.addClass("menu-fixo"); 
+				} else { 
+				nav.removeClass("menu-fixo"); 
+				} 
+			});  
+		});		
+	</script>
 </head>
 <body>
 	<header  class = "Cabecalho" >
-		<img alt = "01" src = "img/logo2.png">
+		<div id="Logo">
+			<img alt = "01" src = "img/logo2.png">
+		</div>
+		<nav  id="menuHeader" class="Menu_main">
+			<ul>
+				<li class="Sublinha"><a class="visita" href="#">Início</a></li>
+				<li class="Sublinha"><a class="visita" href="#">Sobre</a></li>
+				<li class="Sublinha"><a class="visita" href="#">Galeria</a></li>
+				<li class="Sublinha"><a class="visita" href="#">Contato</a></li>
+				<li class="Sublinha"><a class="visita" href="#">Desafios</a></li>
+				<li class="Sublinha"><a class="visita" href="#">Sugestões</a></li>
+			</ul>
+		</nav>
 	</header>
-	<nav class = "Menu_main">
-		<ul>
-			<li class="Sublinha"><a class="visita" href="#">Início</a></li>
-			<li class="Sublinha"><a class="visita" href="#">Sobre</a></li>
-			<li class="Sublinha"><a class="visita" href="#">Galeria</a></li>
-			<li class="Sublinha"><a class="visita" href="#">Contato</a></li>
-			<li class="Sublinha"><a class="visita" href="#">Desafios</a></li>
-			<li class="Sublinha"><a class="visita" href="#">Sugestões</a></li>
-		</ul>
-	</nav>
 	<!--<div  class="Navegacao">
 	  <p>
 	    <a>codeNerd@root:~$ cd /home/Inicio </a>
@@ -59,7 +69,6 @@
 						<li class="Sublinha"><a href="#">Struct...</a></li>
 						<li class="Sublinha"><a href="#">Arquivos Binarios...</a></li>
 						<li class="Sublinha"><a href="#">TAD vs TED...</a></li>
-
 					</ul>
 				</nav>
 			</div>
@@ -104,6 +113,10 @@
 				<p>Postado por: <a class="Link" href="https://www.facebook.com/XWalkerTWR"> Mateus Garcia </a></p>
 			</footer>
 		</article>
+	</div>
+	<div class = "Pagina">
+		<iframe class="Video" width="560" height="315" src="https://www.youtube.com/embed/GiCt0Cwcp-U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		
 	</div>
 	<br><br>
 	<footer class="Rodape">

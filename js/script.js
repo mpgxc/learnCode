@@ -12,3 +12,5 @@ function escrever(str, el) {
     }, 80);
 }
 escrever(texto, div);
+
+

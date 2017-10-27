@@ -24,7 +24,7 @@ ul li {
 
 .Cabecalho{
 
-	background: #24252A;
+	background: #28292E;
 	width: 100%;
 	height:  170px;
 	padding: 15px 0;
@@ -69,6 +69,7 @@ nav ul li a{
 }
 nav ul li a:hover{
 	color: #E52329;
+	background-color: #111;
 }
 .esquerda {float: left;}
 .direita {float: right;}

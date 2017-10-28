@@ -3,20 +3,9 @@
 <head>
 	<title> Meu Projeto Web I </title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-	<script src="js/jquery-1.11.1.min.js"></script>
-	<script >
-		$(function(){   
-			var nav = $('#menuHeader');   
-			$(window).scroll(function () { 
-				if ($(this).scrollTop() > 150) { 
-				nav.addClass("menu-fixo"); 
-				} else { 
-				nav.removeClass("menu-fixo"); 
-				} 
-			});  
-		});		
-	</script>
+	<script src="js/scriptMenu.js"></script>
 </head>
 <body>
 	<header  class = "Cabecalho" >
@@ -28,7 +17,7 @@
 				<li class="Sublinha"><a class="visita" href="#">Início</a></li>
 				<li class="Sublinha"><a class="visita" href="#">Sobre</a></li>
 				<li class="Sublinha"><a class="visita" href="#">Galeria</a></li>
-				<li class="Sublinha"><a class="visita" href="#">Contato</a></li>
+				<li class="Sublinha"><a class="visita" href="pages/contato.html">Contato</a></li>
 				<li class="Sublinha"><a class="visita" href="#">Desafios</a></li>
 				<li class="Sublinha"><a class="visita" href="#">Sugestões</a></li>
 			</ul>
@@ -55,7 +44,6 @@
 			<div class = "Barra_Lateral2">
 				<nav>
 					<ul>
-						<li class="Sublinha"><a href="#">Introdução a Linguagem C ...</a></li>
 						<li class="Sublinha"><a href="#">Hello, World!...</a></li>
 						<li class="Sublinha"><a href="#">Tipos Básicos...</a></li>
 						<li class="Sublinha"><a href="#">Laços de Repetição...</a></li>
@@ -72,10 +60,23 @@
 					</ul>
 				</nav>
 			</div>
+			<div class="Conteudo_Lateral Titulo"> Newsletter </div>
+			<div id="EnviarNews" class="direita Barra_Lateral2 Corpo_Central">
+				<form action="/action_page.php">
+				    Nome:<br>
+				    <input type="text" name="firstname" placeholder="João" value="">
+				    <br>
+				    Email:<br>
+				    <input type="text" name="lastname" placeholder="exemplo@dominio.com" value="">
+				    <br><br>
+				    <input type="submit" value="Cadastrar">
+				</form>
+			</div>
+
 		</div>
 		<div  class="post" id="log">
 		  <p>
-		    <a class="esquerda" href = "index.html"> <span class="esquerda Titulo">codeNerd@root:~$/home </span></a>
+		    <a class="esquerda" href = "index.html"> <span class="esquerda Titulo">learnCode@root:~$/home </span></a>
 		  </p>
 		</div>
 		<article>
@@ -114,19 +115,33 @@
 			</footer>
 		</article>
 	</div>
-	<div class = "Pagina">
-		<iframe class="Video" width="560" height="315" src="https://www.youtube.com/embed/GiCt0Cwcp-U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
-		
+	
+	<div class = "Canais Centro Pagina Fonte">
+		<h2>Lista de Canais sobre Linguagem C.</h2>
+		<div id="container">
+		    <div id="box-1" class="box Corpo_Central">
+		    	<iframe  src="https://www.youtube.com/embed/GiCt0Cwcp-U?rel=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		    	<h3>Canal:<a href="#"> Prog. Descomplicada</a></h3>
+		    </div>
+		    <div id="box-2" class="box Corpo_Central">
+		    	<iframe  src="https://www.youtube.com/embed/VnH7OVFj_pA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		    	<h3>Canal: <a href="#"> De aluno para aluno</a></h3>
+		    </div>
+		    <div id="box-3" class="box Corpo_Central">
+		    	<iframe  src="https://www.youtube.com/embed/FH7YrE0RjWE?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>
+		    	<h3>Canal:<a href="#"> eXcript</a></h3>
+		    </div>
+		</div>
 	</div>
 	<br><br>
-	<footer class="Rodape">
+	<footer class="Rodape Fonte">
 		<h1> #codeNerd</h1>
 		<br>
 		<div class = "circle">
 			<img src="img/perfil.png" alt="perfil" height="60" width="60">
 			<p> Mateus Pinto Garcia</p>
 		</div>
-		<nav>
+		<nav class="MenuFooter">
 			<ul>
 				<li class="Sublinha"><a href="#">Sobre o autor</a></li>
 				<li class="Sublinha"><a href="#">Mapa do site</a></li>
@@ -134,14 +149,11 @@
 			</ul>
 		</nav>
 		<br>
-	  	<p> Email contato: <a class="Link" href="#"> mateuspgx5@live.com</a>
-			<br>
-			<br>
 			<div class="by">
 					<br>
 				<p>Desenvolvido por: <a class="Link" href="https://www.facebook.com/XWalkerTWR"> Mateus Pinto Garcia. </a></p>
 			</div>
 	</footer>
-		<script type="text/javascript" src = "js/script.js"></script>
+	<script src = "js/script.js"></script>
 </body>
 </html>

@@ -4,7 +4,7 @@
 	padding: 0;
 }
 body {
-  font-family: Monaco, Consolas, "Lucida Console", monospace;
+  	font-family: Monaco, Consolas, "Lucida Console", monospace;
 	background:#e6e6fa;
 }
 a{
@@ -21,7 +21,9 @@ ul li {
     top: 0;
     z-index: 99;
 }
-
+.Fonte{
+	font-family: 'Audiowide', cursive;
+}
 .Cabecalho{
 
 	background: #24252A;
@@ -36,9 +38,9 @@ ul li {
 	width: auto;
 	height: 100px;
 }
-.Video{
 
-	width: 80%;
+.Centro{
+	text-align: center;
 }
 .Menu_main{
 
@@ -132,20 +134,43 @@ nav ul li a:hover{
 .Corpo_Central{
 
 	border-width: 2px;
-  border-style: dashed;
-  border-color: #C0C0C0;
+  	border-style: dashed;
+  	border-color: #C0C0C0;
 	color: black;
 	background-color: #fff;
 	width: 650px;
 	padding: 5px;
 	margin: 5px;
 }
+.Corpo_Central h2{
+	text-align: center;
+	margin: 10px;
+}
+#container {
+    width: 100%;
+    border-color: blue;
+    text-align: center;
+}
+.Canais a{
+	color: black;
+}
+.Canais a:hover{
+	color: #E52329;
+}
+.Canais h2{
+	margin: 20px;
+}
+.box {
+    display: inline-block;
+    width: 300px; height: 150px;
+    margin: 10px 0px;
+}
 
 .post{
 
 	border-width: medium;
-  border-style: solid;
-  border-color: #E5E5E5;
+  	border-style: solid;
+  	border-color: #E5E5E5;
 	margin:  5px;
 	color: #9FE12D;
 	background: #1C1917;
@@ -179,7 +204,7 @@ nav ul li a:hover{
 
 .Barra_Lateral2 nav ul li{
 	-webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+  	transition: all 300ms ease;
 	text-align: center;
 	display: block;
 	border-bottom: 1px solid #E6E6E6;
@@ -187,11 +212,44 @@ nav ul li a:hover{
 .Barra_Lateral2 nav ul li a:hover{
 	color: #E52329;
 }
+#EnviarNews form{
+	height: 275px;
+    border-radius: 5px;
+    padding: 20px;
 
+}
+/**/
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+/**/
 .Rodape{
-  width: 100%;
-  height: 350px;
-  background-color: #373941;
+
+  	width: 100%;
+  	height: 400px;
+  	background-color: #373941;
 	text-align: center;
 	color: #fff;
 	border-top: 6px solid #E52329;
@@ -218,14 +276,20 @@ nav ul li a:hover{
 
 .Titulo{
 	-webkit-transition: all 300ms ease;
-  transition: all 300ms ease;
+  	transition: all 300ms ease;
 	color: none;
 }
 .Titulo:hover{
 	color: white;
 }
 
+footer h1{
+	margin: 25px;
 
+}
+.MenuFooter{
+	margin: 25px;
+}
 
 
 

@@ -4,8 +4,8 @@
 	padding: 0;
 }
 body {
-    font-family: Monaco, Consolas, "Lucida Console", monospace;
-	background: #F4F4F4;
+  	font-family: Monaco, Consolas, "Lucida Console", monospace;
+	background:#e6e6fa;
 }
 a{
 
@@ -17,23 +17,35 @@ ul li {
   font-family: sans-serif;
   font-size: 18px;
 }
-
+.menu-fixo  {
+    position:fixed !important;
+    top: 0;
+    z-index: 99;
+}
 .Cabecalho{
 
 	background: #24252A;
 	width: 100%;
-	height:  150px;
+	height:  170px;
 	padding: 15px 0;
 	color: #fff;
 	text-align: center;
 }
-.Cabecalho img{
+#Logo{
 	margin-top: 50px;
+	width: auto;
+	height: 100px;
+}
+.Video{
+
+	width: 80%;
 }
 .Menu_main{
 
+	
 	width:100%;
 	background-color: #1C1917;
+	height: 60px;
 	color: #fff;
 	padding: 0px;
 	text-align: center;
@@ -142,16 +154,9 @@ nav ul li a:hover{
 	box-shadow: 0px 5px 5px rgba(1,0,0,0.1);
 	margin:  30px auto 0px auto;
 	padding: 10px;
+	margin-top: 80px;
 	border-radius: 9px;
 	width: 1000px;
-}
-.fb-comments{
-
-	background:  red;
-	height:  100px;
-	width: 650px;
-	padding: 5px;
-	margin: 30px auto 0px auto;
 }
 
 .Corpo_Central{
@@ -204,9 +209,9 @@ nav ul li a:hover{
 
 
 .Rodape{
-  width: 100%;
-  height: 350px;
-  background-color: #373941;
+  	width: 100%;
+  	height: 400px;
+  	background-color: #373941;
 	text-align: center;
 	color: #fff;
 	border-top: 6px solid #E52329;

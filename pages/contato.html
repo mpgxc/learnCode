@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
+
 	<title> Meu Projeto Web I </title>
+	
 	<link rel="stylesheet" type="text/css" href="css/stylepage.css">
 	<link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
 	<script src = "../js/scriptMenu.js"></script>
@@ -18,7 +20,7 @@
 		</div>
 		<nav  id="menuHeader" class="Menu_main">
 			<ul>
-				<li class="Sublinha"><a class="visita" href="../index.html">Início</a></li>
+				<li class="Sublinha"><a class="visita" href="../Index.html">Início</a></li>
 				<li class="Sublinha"><a class="visita" href="#">Sobre</a></li>
 				<li class="Sublinha"><a class="visita" href="#">Galeria</a></li>
 				<li class="Sublinha"><a class="visita" href="pages/contato.html">Contato</a></li>
@@ -47,7 +49,7 @@
 				-->	
 			  	<div class="entercontact">
 			 		<h6>ENTRE EM CONTATO</h6>
-			 		<p>Preencher os campos abaixo.</p>
+			 		<p>Preencha todos os campos abaixo.</p>
 			 	</div>
 			    <div  class="Corpo_Central">
 			        <form class = "form " name = "formGeral" action="enviando.html" >
@@ -55,6 +57,16 @@
 			            Nome:<br>
 			            <input type="text" name="nome" value="" placeholder="Digite seu nome..."> <br>
 			           
+			            <label for="institutos">Instituição:</label>
+					    <select id="institutos" name="country">
+					        <option value="ufpi">UFPI - Universidade Federal do Piauí</option>
+					        <option value="ifpi">IFPI - Instituto Federal do Piauí</option>
+					        <option value="aespi">AESPI - Associação de Ensino Superior do Piauí</option>	
+					 	    <option value="rsa">Faculdade R. Sá - Desenvolvendo com Educação</option>
+					 	    <option value="Unopar">UNOPAR</option>
+					    	<option value="outros">Outros. . .</option>
+					    </select>
+
 			            Email:<br>
 			            <input placeholder="Digite o email..." type="text" name="email" value="">
 			            <br>
@@ -65,8 +77,8 @@
 			                  <label for="female">Feminino </label>
 			                </div>
 			             <br>
+			             Mensagem:<br>
 			            <textarea placeholder="Digite uma mensagem..." name="mensagem" rows="10" ></textarea>
-			         
 			          <input  class="botao" type="submit" onclick=" return ValidarDados()">
 			        </form>
 			    </div>
@@ -74,6 +86,7 @@
 			</div>
 	</div>
 	<br><br>
+	<div class="paginacao"></div>
 	<footer class="Rodape Fonte">
 		<h1> #learnCode</h1>
 		<br>

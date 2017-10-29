@@ -141,14 +141,11 @@ nav ul li a:hover{
 
 .Corpo_Central{
 
-	border-width: 2px;
-  	border-style: dashed;
-  	border-color: #C0C0C0;
 	color: black;
 	background-color: #fff;
-	width: 650px;
-	padding: 5px;
-	margin: 5px;
+	width: 643px;
+	padding: 10px;
+	margin: 10px;
 }
 .Corpo_Central h2{
 	text-align: center;
@@ -176,33 +173,31 @@ nav ul li a:hover{
     width: 300px; height: 150px;
     margin: 10px 0px;
 }
-
 .post{
 
-	border-width: medium;
-  	border-style: solid;
-  	border-color: #E5E5E5;
-	margin:  5px;
+  	margin-left: -10px;
+  	margin-top:  -10px;
 	color: #9FE12D;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
 	background: #1C1917;
-	width: 650px;
+	width: 675px;
 	height: 30px;
 	padding: 5px;
 }
 .Conteudo_Lateral{
 
-	border-width: medium;
-    border-style: solid;
-    border-color: #E5E5E5;
-	margin:  5px;
+	margin-top:  -10px;
+	margin-right: -10px;
+	border-top-left-radius: 9px;
+	border-top-right-radius: 9px;
 	color: #9FE12D;
 	background: #1C1917;
 	padding: 5px;
 	text-align: center;
-	width: 300px;
+	width: 320px;
 	height: 30px;
 }
-
 
 .Barra_Lateral2{
 

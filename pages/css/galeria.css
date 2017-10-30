@@ -1,0 +1,55 @@
+
+
+/* Center website */
+.Quebra{
+    box-sizing: border-box;
+}
+.main {
+    max-width: 1000px;
+    margin: auto;
+    align-items: center;
+}
+
+#Titulo{
+    margin: 35px;
+    font-size: 25px;
+    text-align: center;
+
+}
+.row {
+    margin: 10px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+    padding: 8px;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    margin-left: 12px;
+    margin-right: -12px;
+    width: 30.9%;
+    display: none; /* Hide all elements by default */
+}
+
+/* Clear floats after rows */ 
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Content */
+.content {
+    border: 1px solid #ccc;
+    background-color: white;
+    padding: 10px;
+}
+
+/* The "show" class is added to the filtered elements */
+.show {
+  display: block;
+}

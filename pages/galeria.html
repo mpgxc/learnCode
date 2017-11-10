@@ -1,18 +1,16 @@
 <!DOCTYPE html>
 <html lang="pt">
 <head>
-
+  <link rel="shortcut icon" href="../img/favicon.ico" />
+  
   <title> Meu Projeto Web I </title>
   
-  <link rel="stylesheet" type="text/css" href="css/stylepage.css">
   <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
   <script src = "../js/scriptMenu.js"></script>
   <script src = "../js/script.js"></script>
-  <link rel="stylesheet" type="text/css" href="css/styleform.css"> <!--  Esse CSS é do formulário-->
   <link rel="stylesheet" type="text/css" href="css/galeria.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 </head>
-<body>
 <body>
   <header  class = "Cabecalho" >
         <div id="Logo">
@@ -41,10 +39,10 @@
     <nav  id="menuHeader" class="Menu_main">
       <ul>
         <li class="Sublinha"><a class="visita" href="../Index.html">Início</a></li>
-        <li class="Sublinha"><a class="visita" href="#">Sobre</a></li>
-        <li class="Sublinha"><a class="visita" href="#">Galeria</a></li>
+        <li class="Sublinha"><a class="visita" href="sobre.html">Sobre</a></li>
+        <li class="Sublinha"><a class="visita" href="galeria.html">Galeria</a></li>
         <li class="Sublinha"><a class="visita" href="contato.html">Contato</a></li>
-        <li class="Sublinha"><a class="visita" href="#">Desafios</a></li>
+        <li class="Sublinha"><a class="visita" href="desafios.html">Desafios</a></li>
         <li class="Sublinha"><a class="visita" href="#">Sugestões</a></li>
       </ul>
     </nav>
@@ -64,7 +62,7 @@
     </div>
       <div id="Titulo" class="Fonte">
           <p>Galeria de Imagens</p>      
-        </div>
+      </div>
       <div class="Corpo_Central main Fonte Quebra">
       
       <input type="radio" onclick="filterSelection('all')"    name="category" checked> Mostrar todos
@@ -73,67 +71,67 @@
       <input type="radio" onclick="filterSelection('Hardware')" name="category">         Hardware
 
       <div class="row">
-        <div class="column Programadores">
+        <div class="zoom column Programadores">
           <div class="content">
-            <img src="img/program.jpg" alt="Mountains" height="160" width="285">
+            <img src="img/program.jpg" alt="" height="160" width="285">
             <h4>Título</h4>
             <p>Leve descrição...</p>
           </div>
         </div>
-        <div class="column Programadores">
+        <div class="zoom column Programadores">
           <div class="content">
-          <img src="img/program2.jpg" alt="Lights" height="160" width="285">
+          <img src="img/program2.jpg" alt="" height="160" width="285">
             <h4>Título</h4>
             <p>Leve drscrição...</p>
           </div>
         </div>
-        <div class="column Programadores">
+        <div class="zoom column Programadores">
           <div class="content">
-          <img src="img/program3.jpg" alt="Nature" height="160" width="285">
+          <img src="img/program3.jpg" alt="" height="160" width="285">
             <h4>Título</h4>
             <p>Leve descrição...</p>
           </div>
         </div>
         
-        <div class="column Codigos">
+        <div class="zoom column Codigos">
           <div class="content">
-            <img src="img/code.jpg" alt="Car" height="160" width="285">
+            <img src="img/code.jpg" alt="" height="160" width="285">
             <h4>Título</h4>
             <p>Leve descrição...</p>
           </div>
         </div>
-        <div class="column Codigos">
+        <div class="zoom column Codigos">
           <div class="content">
-          <img src="img/code2.png" alt="Car" height="160" width="285">
+          <img src="img/code2.png" alt="" height="160" width="285">
             <h4>Título</h4>
             <p>Leve descrição...</p>
           </div>
         </div>
-        <div class="column Codigos">
+        <div class="zoom column Codigos">
           <div class="content">
-          <img src="img/Code3.png" alt="Car" height="160" width="285">
+          <img src="img/Code3.png" alt="" height="160" width="285">
             <h4>Título</h4>
             <p>Leve descrição...</p>
           </div>
         </div>
 
-        <div class="column Hardware">
+        <div class="zoom column Hardware">
           <div class="content">
-            <img src="img/hard.jpg" alt="Car" height="160" width="285">
+            <img src="img/hard.jpg" alt="" height="160" width="285">
             <h4>Título</h4>
             <p>Leve descrição...</p>
           </div>
         </div>
-        <div class="column Hardware">
+        <div class="zoom column Hardware">
           <div class="content">
-          <img src="img/hard2.jpg" alt="Car" height="160" width="285">
+          <img src="img/hard2.jpg" alt="" height="160" width="285">
             <h4>Título</h4>
             <p>Leve descrição...</p>
           </div>
         </div>
-        <div class="column Hardware">
+        <div class="zoom column Hardware">
           <div class="content">
-          <img src="img/hard3.jpg" alt="Car" height="160" width="285">
+          <img src="img/hard3.jpg" alt="" height="160" width="285">
             <h4>Título</h4>
             <p>Leve descrição...</p>
           </div>
@@ -142,8 +140,7 @@
 
       <!-- END MAIN -->
       </div>
-
-  </div>
+</div>
   <br><br>
   <div class="paginacao"></div>
   <footer class="Rodape Fonte">
@@ -166,11 +163,10 @@
         <p>Desenvolvido por: <a class="Link" href="https://www.facebook.com/XWalkerTWR"> Mateus Pinto Garcia. </a></p>
       </div>
   </footer>
-  <a href="#top" class="glyphicon glyphicon-chevron-up"><img  width="60" height="60" src="../img/topo.png"></a>
+  <a href="#top" class="glyphicon glyphicon-chevron-up"><img alt="" width="60" height="60" src="../img/topo.png"></a>
 
   <script src = "js/scriptform.js"></script>
   <script src = "js/scriptpage.js"></script>
   <script src = "js/galeria.js"></script>
-  
 </body>
 </html>

@@ -1,45 +1,43 @@
-
-.Fonte{
-	font-family: 'Audiowide', cursive;
+.Fonte {
+    font-family: 'Audiowide', cursive;
 }
-.entercontact{
-	margin: 35px;
-	font-size: 30px;
-	text-align: center;
+.entercontact {
+    margin: 35px;
+    font-size: 30px;
+    text-align: center;
 }
-.botao{
-    font-family: 'Audiowide', cursive;   
+.botao {
+    font-family: 'Audiowide', cursive;
 }
-.Pagina#post{
-	width: auto;
+.Pagina#post {
+    width: auto;
 }
-.form{
-	margin: 30px;
-	font-size: 18px;
-	margin-left: auto;
+.form {
+    margin: 30px;
+    font-size: 18px;
+    margin-left: auto;
     margin-right: auto;
     width: 700px;
 }
-.form textarea{
-	width: 100%;
+.form textarea {
+    width: 100%;
 }
-
-footer h1{
-	margin: 25px;
-
+footer h1 {
+    margin: 25px;
 }
-.MenuFooter{
-	margin: 25px;
+.MenuFooter {
+    margin: 25px;
 }
-form{
-
+form {
     border-radius: 5px;
     padding: 0px;
     margin: 0px;
     align-items: center;
 }
 /**/
-input[type=text], select {
+
+input[type=text],
+select {
     width: 100%;
     padding: 12px 20px;
     margin: 8px 0;
@@ -48,7 +46,6 @@ input[type=text], select {
     border-radius: 4px;
     box-sizing: border-box;
 }
-
 input[type=submit] {
     width: 100%;
     background-color: #4CAF50;
@@ -59,8 +56,6 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-
 input[type=submit]:hover {
     background-color: #45a049;
 }
-

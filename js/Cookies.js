@@ -29,10 +29,10 @@ function checkCookie() {
     else {
        user = prompt("Coloque seu nome de jovem gafanhoto ¯\\_(ツ)_/¯ !","");
        if (user != "" && user != null) {
-          setCookie("username", user, 10);
+          setCookie("username", user, 2);
        }else{
           user = "Anônimo";
-          setCookie("username", user, 10);
+          setCookie("username", user, 2);
        }
 
        document.getElementById("Aluno").innerHTML = user;

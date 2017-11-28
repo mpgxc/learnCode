@@ -26,9 +26,11 @@ function checkCookie() {
     if (user != "") {
       document.getElementById("Aluno").innerHTML = user;
     } else {
-      user = "Anônimo";
+       user = "Anônimo";
        user = prompt("Coloque seu nome de jovem gafanhoto ¯\\_(ツ)_/¯ !","");
        if (user != "" && user != null) {
+          setCookie("username", user, 10);
+       }else{
           setCookie("username", user, 10);
        }
        document.getElementById("Aluno").innerHTML = user;

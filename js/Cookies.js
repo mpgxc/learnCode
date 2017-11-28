@@ -2,11 +2,7 @@ function setCookie(cname,cvalue,exdays) {
     var d = new Date();
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires=" + d.toGMTString();
-    if(cname == "" || cname == null){
-          document.cookie = "Anônimo" + "=" + cvalue + ";" + expires + ";path=/";
-    }else{
-          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";  
-    }
+    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
 function getCookie(cname) {
@@ -32,9 +28,11 @@ function checkCookie() {
     } else {
        user = prompt("Coloque seu nome de jovem gafanhoto ¯\\_(ツ)_/¯ !","");
        if (user != "" && user != null) {
-           setCookie("username", user, 10);
-       }
+          setCookie("username", user, 10);
+       }else{
+          setCookie("Anônimo", user, 10);
+       } 
 
        document.getElementById("Aluno").innerHTML = user;
-    }
+    } 
 }

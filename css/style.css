@@ -6,6 +6,10 @@ body {
     font-family: Monaco, Consolas, "Lucida Console", monospace;
     background: #e6e6fa;
 }
+.user{
+    font-size: 15px;
+    color: #E52329;
+}
 a {
     text-decoration: none;
     color: #fff;

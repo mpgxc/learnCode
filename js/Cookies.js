@@ -30,7 +30,7 @@ function checkCookie() {
        if (user != "" && user != null) {
           setCookie("username", user, 10);
        }else{
-          setCookie("Anônimo", user, 10);
+          setCookie("username","Anônimo", 10);
        } 
 
        document.getElementById("Aluno").innerHTML = user;

@@ -31,9 +31,7 @@ function checkCookie() {
        if (user != "" && user != null) {
            setCookie("username", user, 10);
        }
-       if(user == null || user == ""){
-            document.getElementById("Aluno").innerHTML = "Anônimo";
-       }
+
        document.getElementById("Aluno").innerHTML = user;
     }
 }

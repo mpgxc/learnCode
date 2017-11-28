@@ -4,8 +4,9 @@ function setCookie(cname,cvalue,exdays) {
     var expires = "expires=" + d.toGMTString();
     if(cname == ""){
       document.getElementById("Aluno").innerHTML = "Anônimo";
+    }else{
+          document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";  
     }
-    document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
 }
 
 function getCookie(cname) {

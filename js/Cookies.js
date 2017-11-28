@@ -24,7 +24,7 @@ function getCookie(cname) {
 function checkCookie() {
     var user=getCookie("username");
     if (user != "") {
-        alert("Bem-Vindo de volta " + user + " ಠᴗಠ");
+        document.getElementById("Aluno").innerHTML = user;
     } else {
        user = prompt("Coloque seu nome de jovem gafanhoto ¯\\_(ツ)_/¯ !","");
        if (user != "" && user != null) {

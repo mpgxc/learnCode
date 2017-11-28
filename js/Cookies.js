@@ -26,10 +26,13 @@ function checkCookie() {
     if (user != "") {
         alert("Bem-Vindo de volta " + user + " ಠᴗಠ");
     } else {
-       user = prompt("Coloque seu nome de jovem gafanhoto ¯\\_(ツ)_/¯ ","");
+       user = prompt("Coloque seu nome de jovem gafanhoto ¯\\_(ツ)_/¯ !","");
        if (user != "" && user != null) {
            setCookie("username", user, 30);
        }
-       alert("Bem-Vindo "+user);
+       if(user == null || user == ""){
+            document.getElementById("Aluno").innerHTML = "Anônimo";
+       }
+       document.getElementById("Aluno").innerHTML = user;
     }
 }

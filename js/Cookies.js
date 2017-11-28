@@ -3,7 +3,7 @@ function setCookie(cname,cvalue,exdays) {
     d.setTime(d.getTime() + (exdays*24*60*60*1000));
     var expires = "expires=" + d.toGMTString();
     if(cname == "" || cname == null){
-      document.getElementById("Aluno").innerHTML = "Anônimo";
+          document.cookie = "Anônimo" + "=" + cvalue + ";" + expires + ";path=/";
     }else{
           document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";  
     }

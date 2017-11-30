@@ -1,0 +1,189 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+   <head>
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+      <title> #learnCode</title>
+      <link rel="stylesheet" type="text/css" href="css/posts.css">
+      <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
+      <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <script src="../js/scriptMenu.js"></script>
+      <script src="../js/Cookies.js"></script>
+      <style>
+         .sombra{
+            text-shadow: 0.1em 0.1em 0.2em black;
+         }
+      </style>
+   </head>
+   <body onload="checkCookie()">
+      <header  class = "Cabecalho" >
+         
+         <div id="Logo">
+            <img alt = "01" src = "../img/logo2.png">
+            <div id="MeuLogo">
+               <svg width="100px" height="100px" viewBox="0 0 600 600" version="1.1">
+                  <defs>
+                     <linearGradient x1="12.9593594%" y1="12.0393928%" x2="79.6388325%" y2="78.2008538%" id="linearGradient-1">
+                        <stop stop-color="#387EB8" offset="0%"></stop>
+                        <stop stop-color="#366994" offset="100%"></stop>
+                     </linearGradient>
+                     <linearGradient x1="19.127525%" y1="20.5791813%" x2="90.7415328%" y2="88.4290372%" id="linearGradient-2">
+                        <stop stop-color="#FFE052" offset="0%"></stop>
+                        <stop stop-color="#FFC331" offset="100%"></stop>
+                     </linearGradient>
+                  </defs>
+                  <g>
+                     <path d="M327.08,180.984H192.677L161.05,309.958h133.984L327.08,180.984z M180.58,294.646l24.12-98.35h102.791l-24.419,98.35   H180.58z" fill="#D80027"/>
+                  </g>
+                  <g>
+                     <path d="M60.517,490h72.241l32.763-133.386h102.492L235.639,490h72.211l32.763-133.386h117.625v-61.968H355.702l24.434-98.35   h78.103v-61.968h-63.044L427.957,0h-72.615l-32.763,134.328H219.728L252.492,0h-72.256l-32.748,134.328H31.762v61.968h100.683   l-24.12,98.35H31.762v61.968h61.519L60.517,490z M47.074,341.301v-31.343h73.273l31.627-128.975h-104.9v-31.343H159.51   l32.748-134.328h40.734l-32.763,134.328h134.373l32.763-134.328h41.093l-32.763,134.328h67.231v31.343h-74.753l-32.061,128.975   h106.814v31.343H328.621l-32.763,133.386h-40.749l32.375-133.386H153.529l-32.763,133.386H80.047l32.763-133.386H47.074z" fill="#D80027"/>
+                  </g>
+               </svg>
+            </div>
+         </div>
+         <nav  id="menuHeader" class="Menu_main">
+            <ul>
+               <li class="Sublinha"><a class="visita" href="index.html">Início</a></li>
+               <li class="Sublinha"><a class="visita" href="pages/sobre.html">Sobre</a></li>
+               <li class="Sublinha"><a class="visita" href="pages/galeria.html">Galeria</a></li>
+               <li class="Sublinha"><a class="visita" href="pages/contato.html">Contato</a></li>
+               <li class="Sublinha"><a class="visita" href="pages/desafios.html">Desafios</a></li>
+               <li class="Sublinha"><a class="visita" href="pages/artigos.html">Artigos</a></li>
+               <li class="direita user" > <a  id="Aluno">Anônimo</a> </li>
+            </ul>
+         </nav>
+
+      </header>
+      <!--<div  class="Navegacao">
+         <p>
+           <a>codeNerd@root:~$ cd /home/Inicio </a>
+         </p>
+         </div>
+         -->
+      <div class = "Pagina">
+         <div  class="post" id="log">
+            <p>
+               <a  class="esquerda" href = ""> <span class="esquerda Titulo">learnCode@root:~$/home </span></a>
+            </p>
+         </div>
+         <article>
+            <div class = "Pagina Corpo_Central">
+               <h2>Primeiros Passos com a Linguagem C</h2>
+               <br>
+               <img alt="" class="centro" src="posts/init.png"> <br><br>
+               <p>
+                  C foi uma linguagem criada por Dennis Ritchie, que se popularizou, principalmente   em várias universidades, onde é ensinado algoritmos e estruturas de dados com essa linguagem, além disso, várias linguagens que são bastantes usadas como Java e C++ foram  baseadas  em C.
+
+               </p>
+               <br>
+               <p>
+                  Neste Tutorial será mostrado conceitos básicos com a linguagem C, para isso, será usado a IDE Code::Blocks, mas podem ser usadas outras, como Dev-C++, Falcon C++, por exemplo.
+               </p>
+               <br><br>
+               
+               <figure>
+                  <img src="posts/001.png" class="tam " alt="">
+                  <figcaption class="centro"><strong>Figura 1</strong>: Criando um Novo Arquivo.</figcaption>
+               </figure>
+
+               <br><br>
+               <p>
+                  Seguindo os passos da figura 1 é possível, criar um arquivo, para que nosso código seja escrito.
+                  <br><br>
+                  O primeiro passo para  criação de um programa na linguagem c, é a definição de uma biblioteca, porque através dela, será importado comandos úteis para o programa. A biblioteca básica definida foi <strong>stdio.</strong>,  porque possui os comandos básicos de saída e entrada para a execução do nosso programa. Na figura 2 é mostrado a escrita desse comando.
+
+               </p>
+               <figure>
+                  <img src="posts/2.png" class="tam " alt="">
+                  <figcaption class="centro"><strong>Figura 2</strong>:Definição da biblioteca</figcaption>
+               </figure>
+               <br>
+               <p>
+                  Funções consistem em blocos de códigos que possuem determinada funcionalidades, não vamos entrar em muito detalhes em relação a funções, por ser um tutorial básico. Tudo que nós precisamos saber é que a maioria dos códigos em c, possuirão uma função principal denominada de main. A seguir na figura 3, é mostrado a função main() .
+               </p>
+               <br>
+               <figure>
+                  <img src="posts/3.png" class="tam " alt="">
+                  <figcaption class="centro"><strong>Figura 3</strong>:Definição da função principal</figcaption>
+               </figure>
+               <br>
+               <p>
+                  O nosso ficará dentro da função para que, o mesmo possa ser executado.
+                  Nós vamos escrever uma frase na tela, para isso vamos usar o comando printf, que está mais detalhado na figura 4.
+
+               </p>
+               <br>
+               <figure>
+                  <img src="posts/4.png" class="tam " alt="">
+                  <figcaption class="centro"><strong>Figura 4</strong>:Exibindo nome.</figcaption>
+               </figure>
+               <br>
+               <p>
+               É possível observar na figura 5 que para escrita de uma frase, é preciso, colocar a mesma dentro dos parênteses do printf e com aspas duplas.  No final de uma linha código é preciso colocar o ; .
+               </p>
+               <br>
+               <figure>
+                  <img src="posts/5.png" class="tam " alt="">
+                  <figcaption class="centro"><strong>Figura 5</strong>:Saída.</figcaption>
+               </figure>
+               <br>
+               <p>
+                  Para finalizar vamos ler a idade do usuário e exibi-lá, logo para leitura, vamos precisar do comando scanf, que está mais detalhado na figura abaixo:
+               </p>
+               <br>
+               <figure>
+                  <img src="posts/6.png" class="tam " alt="">
+                  <figcaption class="centro"><strong>Figura 6</strong>:Utilizando o Scanf.</figcaption>
+               </figure>
+               <br>
+               <p>
+                  Também é preciso definir uma variável no tipo char para receber o nome e depois utilizar o scanf para receber o valor.
+
+               </p>
+               <br>
+               <figure>
+                  <img src="posts/7.png" class="tam " alt="">
+                  <figcaption class="centro"><strong>Figura 7</strong>:Código final.</figcaption>
+               </figure>
+               <br><br><br>
+            </div>
+            <footer class="Corpo_Central">
+               <span class="esquerda Titulo"><strong> Conteúdo: </strong> </span>
+               <p> Primeiros Passos com a Linguagem C.</p>
+               <br>
+               <div class="chip">
+                  <img src="../img/avatar2.jpg" alt="" width="100" height="100">
+                  <a class="Link" href="https://www.facebook.com/XWalkerTWR">Davi Luis </a>
+                  Cursando: <strong> Sistemas de Informação</strong>
+               </div>
+            </footer>
+         </article>
+      </div>
+     
+      <br><br>
+      <footer class="sombra Rodape Fonte">
+         <h1> #codeNerd</h1>
+         <br>
+         <div class = "circle">
+            <img src="../img/perfil.png" alt="perfil" height="60" width="60">
+            <p> Mateus Pinto Garcia</p>
+         </div>
+         <nav class="MenuFooter">
+            <ul>
+               <li class="Sublinha"><a href="#">Sobre o autor</a></li>
+               <li class="Sublinha"><a href="#">Mapa do site</a></li>
+               <li class="Sublinha"><a href="#">Entre em contato</a></li>
+            </ul>
+         </nav>
+         <br>
+         <div class="by">
+            <br>
+            <p>Desenvolvido por: <a class="Link" href="https://www.facebook.com/XWalkerTWR"> Mateus Pinto Garcia. </a></p>
+         </div>
+         <a href="#top" class="glyphicon glyphicon-chevron-up"><img alt="" width="60" height="60" src="../img/topo.png"></a>
+      </footer>
+      <script src="../js/escreve.js"></script>
+      <script src="../js/script.js"></script>
+   </body>
+</html>
+

@@ -6,6 +6,10 @@ body {
     font-family: Monaco, Consolas, "Lucida Console", monospace;
     background: #e6e6fa;
 }
+.user{
+    font-size: 15px;
+    color: #E52329;
+}
 a {
     text-decoration: none;
     color: #fff;
@@ -19,9 +23,8 @@ ul li {
     top: 0;
     z-index: 99;
 }
-.user{
-    font-size: 15px;
-    color: #E52329;
+.Fonte {
+    font-family: 'Audiowide', cursive;
 }
 .Cabecalho {
     background: #24252A;
@@ -36,8 +39,13 @@ ul li {
     width: auto;
     height: 100px;
 }
-.Video {
-    width: 80%;
+#MeuLogo {
+    top: -83px;
+    left: -125px;
+    position: relative;
+}
+.Centro {
+    text-align: center;
 }
 .Menu_main {
     width: 100%;
@@ -67,9 +75,8 @@ nav ul li a:hover {
 .direita {
     float: right;
 }
-.Tudo {
-    margin-left: 50px;
-    margin-top: 50px;
+.fonte {
+    color: black;
 }
 .Sublinha {
     display: inline-block;
@@ -115,22 +122,43 @@ nav ul li a:hover {
     width: 1000px;
 }
 .Corpo_Central {
-    border-width: 2px;
-    border-style: dashed;
-    border-color: #C0C0C0;
     color: black;
     background-color: #fff;
     width: auto;
+    padding: 10px;
+    margin: 10px;
 }
-.Navegacao {
-    box-shadow: 0 5px 5px rgba(1, 0, 0, 0.3);
-    margin: 30px auto 0 auto;
-    color: #9FE12D;
-    background: black;
-    border-radius: 12px;
-    width: 660px;
-    height: 25px;
-    padding: 5px;
+.Corpo_Central h2 {
+    text-align: center;
+    margin: 10px;
+}
+.centro{
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+
+}
+#container {
+    width: 100%;
+    border-color: blue;
+    text-align: center;
+}
+.tam{
+    height: 80%;
+    width: 80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    border: 3px solid gray;
+}
+.tam:hover{
+
+     border: 3px solid lightgray;
+}
+.box {
+    display: inline-block;
+    width: 300px;
+    height: 150px;
+    margin: 10px 0;
 }
 .post {
     margin-left: -10px;
@@ -142,6 +170,35 @@ nav ul li a:hover {
     width: 101%;
     height: 30px;
     padding: 5px;
+}
+
+#EnviarNews form {
+    height: 275px;
+    border-radius: 5px;
+    padding: 20px;
+}
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: #ccc solid 1px;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+input[type="submit"] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #45a049;
 }
 .Rodape {
     width: 100%;
@@ -166,16 +223,8 @@ nav ul li a:hover {
     text-decoration: none;
     color: #E52329;
 }
-a[href="#top"] {
-    padding: 10px;
-    position: fixed;
-    top: 90%;
-    right: 40px;
-    display: none;
-    font-size: 30px;
-}
-a[href="#top"]:hover {
-    text-decoration: none;
+.Link:hover {
+    color: #9FE12D;
 }
 .Titulo {
     transition: all 300ms ease;
@@ -183,6 +232,12 @@ a[href="#top"]:hover {
 .Titulo:hover {
     color: white;
 }
+footer h1 {
+    margin: 25px;
+}
+.MenuFooter {
+    margin: 25px;
+}
 a[href="#top"] {
     padding: 10px;
     position: fixed;
@@ -193,11 +248,6 @@ a[href="#top"] {
 }
 a[href="#top"]:hover {
     text-decoration: none;
-}
-#MeuLogo {
-    top: -83px;
-    left: -125px;
-    position: relative;
 }
 svg {
     display: block;
@@ -218,11 +268,7 @@ path {
     }
 }
 .gallery {
-    border: #ccc solid 1px;
-    float: left;
-    width: 245px;
-    padding: 10px;
-    margin-left: 20px;
+    border: #ccc solid 2px;
 }
 .gallery:hover {
     border: #777 solid 1px;
@@ -235,23 +281,32 @@ path {
     padding: 15px;
     text-align: center;
 }
-.Desafios {
-    width: 760px;
-    margin-right: 65px;
-    margin-left: 69px;
-    border-radius: 9px;
-    border: #ccc solid 1px;
-    margin-top: 410px;
-    padding: 40px;
-    height: 115px;
+.gallery {
+    box-sizing: border-box;
 }
-
-.Regras {
-    
-    margin-right: 65px;
-    margin-left: 69px;
-    border-top: #ccc solid 1px;
-    padding: 40px;
-    height: 115px auto;
-    text-align: center;
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.chip {
+    display: inline-block;
+    padding: 0 25px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 50px;
+    border-radius: 25px;
+    background-color: #f1f1f1;
+}
+.chip img {
+    float: left;
+    margin: 0 10px 0 -25px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
 }

@@ -34,7 +34,6 @@ function checkCookie() {
           user = "Anônimo";
           setCookie("username", user, 365);
        }
-
-       document.getElementById("Aluno").innerHTML = user;
+       document.getElementById("Aluno").innerHTML = user.substring(0,7);
     } 
 }

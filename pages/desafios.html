@@ -19,7 +19,7 @@
          }
       </style>
    </head>
-   <body>
+   <body onload="checkCookie()">
       <header  class = "Cabecalho" >
          <div id="Logo">
             <img alt = "01" src = "../img/logo2.png">
@@ -51,7 +51,8 @@
                <li class="Sublinha"><a class="visita" href="galeria.html">Galeria</a></li>
                <li class="Sublinha"><a class="visita" href="contato.html">Contato</a></li>
                <li class="Sublinha"><a class="visita" href="desafios.html">Desafios</a></li>
-               <li class="Sublinha"><a class="visita" href="#">Artigos</a></li>
+               <li class="Sublinha"><a class="visita" href="artigos.html">Artigos</a></li>
+               <li class="direita user" > <a id="Aluno">Anônimo</a> </li>
             </ul>
          </nav>
       </header>
@@ -85,7 +86,6 @@
                   <img src="img/avatar.png" alt="Avatar" style="width:100%">
                   </a>
                   <div class="desc">
-                        <img src="img/winner.png">
                         <p>Uma breve descrição</p>
                   </div>
                </div>
@@ -108,14 +108,29 @@
                </h3>
             </div>
             <!--Enviar-->
-            <form class = "form " name = "formGeral" action="enviando.html" >       
+            <form class = "form " name = "formGeral" action="desafios.html" >       
                Arquivo:<br>
-               <input class="botao"  type="file" name="email">
+               <input class="botao"  type="file" name="arquivo">
                <br>
                Comentario:<br>
                <textarea placeholder="Digite uma mensagem..." name="mensagem" rows="10" ></textarea>
                <input  class="botao" type="submit" onclick=" return ValidarDados()">
             </form>
+            <script>
+                  function ValidarDados(){
+
+                     var   Arquivo   =  formGeral.arquivo.value;  
+                     var   Mensagem  =  formGeral.mensagem.value;
+
+                     if(Arquivo == false || Mensagem == ""){
+                        alert("Preencha os campos Obrigatórios!");
+                        return false;
+                     }else{
+                        alert("Arquivo Enviado com sucesso!");
+                        return "desafios.html";
+                     }
+                  } 
+            </script>
          </div>
       </div>
       <br><br>
@@ -140,8 +155,9 @@
          </div>
       </footer>
       <a href="#top" class="glyphicon glyphicon-chevron-up"><img alt="" width="60" height="60" src="../img/topo.png"></a>
-      <script src = "js/scriptform.js"></script>
+
       <script src = "js/scriptpage.js"></script>
+      <script src = "../js/Cookies.js" ></script>
    </body>
 </html>
 

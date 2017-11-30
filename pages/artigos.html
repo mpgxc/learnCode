@@ -5,8 +5,7 @@
    <head>
       <link rel="shortcut icon" href="../img/favicon.ico" />
       <title> Meu Projeto Web I </title>
-      <link rel="stylesheet" type="text/css" href="css/stylepage.css">
-      <link rel="stylesheet" type="text/css" href="css/desafios.css">
+      <link rel="stylesheet" type="text/css" href="css/contato.css">
       <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
       <script src = "../js/scriptMenu.js"></script>
       <script src = "../js/script.js"></script>
@@ -19,7 +18,7 @@
          }
       </style>
    </head>
-   <body>
+   <body onload="checkCookie()">
       <header  class = "Cabecalho" >
          <div id="Logo">
             <img alt = "01" src = "../img/logo2.png">
@@ -51,7 +50,8 @@
                <li class="Sublinha"><a class="visita" href="galeria.html">Galeria</a></li>
                <li class="Sublinha"><a class="visita" href="contato.html">Contato</a></li>
                <li class="Sublinha"><a class="visita" href="desafios.html">Desafios</a></li>
-               <li class="Sublinha"><a class="visita" href="#">Artigos</a></li>
+               <li class="Sublinha"><a class="visita" href="artigos.html">Artigos</a></li>
+               <li class="direita user" > <a  id="Aluno">Anônimo</a> </li>
             </ul>
          </nav>
       </header>
@@ -67,17 +67,44 @@
                <a  class="esquerda" href = ""> <span class="esquerda Titulo">learnCode@root:~$/home </span></a>
             </p>
          </div>
-         <div class="Fonte entercontact">
-            <p>Principais postagens e submisão de artigos</p>
-         </div>
-         <div  class="Fonte Corpo_Central">
-            <div class="Tudo">
-               
-               ...Aqui vai ficar todas as postagens...
+         <div class="Fonte">
+            <!--
+               //Onde começa meu formulário . . .
+               //Apenas teste, depois irei mudar o CSS
+               -->   
+            <div class="entercontact">
+               <h6>ENTRE EM CONTATO</h6>
+               <p>Preencha todos os campos abaixo.</p>
+            </div>
+            <div  class="Corpo_Central">
+               <form class = "form " name = "formGeral" >
+                  Nome:<br>
+                  <input type="text" name="nome" value="" placeholder="Digite seu nome..."> <br>
+                  <label for="institutos">Instituição:</label>
+                  <select id="institutos" name="country">
+                     <option value="ufpi">UFPI - Universidade Federal do Piauí</option>
+                     <option value="ifpi">IFPI - Instituto Federal do Piauí</option>
+                     <option value="aespi">AESPI - Associação de Ensino Superior do Piauí</option>
+                     <option value="rsa">Faculdade R. Sá - Desenvolvendo com Educação</option>
+                     <option value="Unopar">UNOPAR</option>
+                     <option value="outros">Outros. . .</option>
+                  </select>
+                  Email:<br>
+                  <input placeholder="Digite o email..." type="text" name="email" value="">
+                  Arquivo:<br>
+                  <input class="botao"  type="file" name="arquivo"> <br>
+                  Título: <br>
+                  <input type="text" name="titulo" value="" placeholder="Digite o título...">
+                  <br>
+                  Resumo:<br>
+                  <textarea placeholder="Digite uma mensagem..." name="mensagem" rows="10" ></textarea>
+                  <input  class="botao" type="submit" onclick=" return ValidarDados()">
+               </form>
             </div>
          </div>
       </div>
       <br><br>
+      <div class="paginacao"></div>
       <footer class="sombra Rodape Fonte">
          <h1> #learnCode</h1>
          <br>
@@ -99,8 +126,9 @@
          </div>
       </footer>
       <a href="#top" class="glyphicon glyphicon-chevron-up"><img alt="" width="60" height="60" src="../img/topo.png"></a>
-      <script src = "js/scriptform.js"></script>
+      <script src = "js/scriptform2.js"></script>
       <script src = "js/scriptpage.js"></script>
+      <script src = "../js/Cookies.js" ></script>
    </body>
 </html>
 

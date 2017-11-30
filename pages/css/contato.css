@@ -19,6 +19,10 @@ ul li {
     top: 0;
     z-index: 99;
 }
+.user{
+    font-size: 15px;
+    color: #E52329;
+}
 .Cabecalho {
     background: #24252A;
     width: 100%;

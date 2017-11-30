@@ -4,8 +4,9 @@ function ValidarDados(){
 
 	var Nome  	      =  formGeral.nome.value; 
 	var Email 	      =  formGeral.email.value;
-	var Sexo          =  formGeral.sexo.value;
 	var Mensagem      =  formGeral.mensagem.value;
+	var Arquivo       =  formGeral.arquivo.value;
+	var Titulo        =  formGeral.titulo.value;
 	var FlagEmail     =  false;	
 
 	if(Nome == ""){
@@ -31,17 +32,18 @@ function ValidarDados(){
 			return false;
 		}
 	}
-
-	if(Sexo == ""){
-		alert('Escolha uma opção para "Sexo"! ');
-		return false;
-	}
 	if(Mensagem == ""){
 		alert('Preencha o campo  de "Mensagem"! ');
 		return false;
 	}
+	if(Titulo == ""){
+		alert('Preencha o campo  de Título!');
+		return false;	
+	}
+	if(Arquivo == false){
+		alert("Selecione um arquivo para envio!");
+		return false;
+	}
 	alert("Dados Enviados!");
-	return "contato.html";
+	return "artigos.html";
 }
-
-
